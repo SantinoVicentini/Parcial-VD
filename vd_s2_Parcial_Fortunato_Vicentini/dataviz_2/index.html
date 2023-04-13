@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chart 2</title>
+    <style>
+      #chart{
+        overflow-y:auto;
+      }
+      #chart svg{
+        max-width: initial;
+      }
+      a{
+        background-color: #3480b3; /* Color de fondo */
+        border: none; /* Sin borde */
+        color: white; /* Color de texto */
+        padding: 12px 24px; /* Espacio de relleno */
+        text-align: center; /* Alineación del texto */
+        text-decoration: none; /* Sin subrayado */
+        display: inline-block; /* Como elemento en línea */
+        font-size: 16px; /* Tamaño de fuente */
+        margin: 4px 2px; /* Margen */
+        cursor: pointer; /* Cambio de cursor al pasar el mouse */
+        border-radius: 8px; /* Radio de borde */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>DISMINUYEN LAS HORAS EN MISION PARA LA ULTIMA DECADA</h1>
+    </header>
+    <div id="chart"></div>
+    <div class="button"><a href="/index.html">HOME</a></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
