@@ -7,7 +7,7 @@ d3.dsv(';', '../data/ruidos_molestos.csv', d3.autoType).then(data => {
   ruidosMolestos = ruidosMolestos.filter(d => {
       let fecha = parser(d.fecha_ingreso);
       let mes = fecha.getMonth();
-      return mes === 7;
+      return mes === 5;
   });
   let casosPorFecha = d3.group(ruidosMolestos, d => parser(d.fecha_ingreso));
   const esLocale = 'es-ES'; // definimos el locale en español
@@ -27,6 +27,7 @@ d3.dsv(';', '../data/ruidos_molestos.csv', d3.autoType).then(data => {
   datosPorFecha.sort((a, b) => {
     return ordenDias.indexOf(a.dia) - ordenDias.indexOf(b.dia);
   });
+  //console.log(ruidosMolestos)
   //console.log(datosPorFecha)
   // Crear el gráfico de líneas utilizando los datos filtrados y agrupados
   let chart = Plot.plot({
@@ -38,13 +39,12 @@ d3.dsv(';', '../data/ruidos_molestos.csv', d3.autoType).then(data => {
       domain: ordenDias,
     },
     y: {
-      label: "Denuncias agosto",
-      domain: [30, 70],
+      label: "Denuncias Junio",
+      domain: [20, 100],
       grid: true
     }
   });
 
   // Agregar el gráfico al elemento con el id "chart" del HTML
-  d3.select('#chart').append(() => chart);
+  d3.select('#chart3').append(() => chart);
 })
-
