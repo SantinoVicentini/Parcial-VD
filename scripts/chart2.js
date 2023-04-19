@@ -36,7 +36,7 @@ d3.dsv(';', '../data/ruidos_molestos.csv', d3.autoType).then(data => {
         x: "estacion",
         y: "cantidad",
         fill: "#333333",
-        fillOpacity: 0.4
+        fillOpacity: 0.7
       }),
       Plot.lineY(points, {
         x: "estacion",

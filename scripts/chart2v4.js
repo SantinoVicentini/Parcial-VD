@@ -30,10 +30,21 @@ d3.dsv(';', '../data/ruidos_molestos.csv', d3.autoType).then(data => {
     //console.log(ruidosMolestos)
     //console.log(datosPorFecha)
     // Crear el gráfico de líneas utilizando los datos filtrados y agrupados
-    let chart = Plot.plot({
-      marks: [
-        Plot.line(datosPorFecha, {x: "dia", y: "cantidad", stroke:"#282828"})
-      ],
+    let maxIndex = 0;
+  let maxValue = 0;
+  datosPorFecha.forEach((d, i) => {
+    if (d.cantidad > maxValue) {
+      maxValue = d.cantidad;
+      maxIndex = i;
+    }
+  });
+
+  // Crear el gráfico de líneas utilizando los datos filtrados y agrupados
+  let chart = Plot.plot({
+    marks: [
+      Plot.line(datosPorFecha, {x: "dia", y: "cantidad", stroke:"#282828"}),
+      Plot.circle([datosPorFecha[maxIndex]], {x: "dia", y: "cantidad", r: 4, fill: "#282828"})
+    ],
       x: {
         label: "",
         domain: ordenDias,
