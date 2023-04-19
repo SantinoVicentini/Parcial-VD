@@ -43,7 +43,7 @@ d3.dsv(';', '../data/ruidos_molestos.csv', d3.autoType).then(data => {
   let chart = Plot.plot({
     marks: [
       Plot.line(datosPorFecha, {x: "dia", y: "cantidad", stroke:"#282828"}),
-      Plot.circle([datosPorFecha[maxIndex]], {x: "dia", y: "cantidad", r: 4, fill: "#282828"})
+      Plot.circle([datosPorFecha[maxIndex]], {x: "dia", y: "cantidad", r: 4, fill: "#0000FF"})
     ],
     x: {
       label: "",
