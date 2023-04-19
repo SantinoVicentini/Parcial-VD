@@ -43,25 +43,25 @@ console.log(datosFinales)
         Plot.line(datosFinales, {
           x: 'estacion',
           y: 'PALERMO',
-          stroke: '#1f77b4',
+          stroke: '#8c2d04',
           strokeWidth: 2,
         }),
         Plot.line(datosFinales, {
           x: 'estacion',
           y: 'CABALLITO',
-          stroke: '#ff7f0e',
+          stroke: '#ec7014',
           strokeWidth: 2,
         }),
         Plot.line(datosFinales, {
           x: 'estacion',
           y: 'RECOLETA',
-          stroke: '#2ca02c',
+          stroke: '#fec44f',
           strokeWidth: 2,
         }),
         Plot.line(datosFinales, {
           x: 'estacion',
           y: 'BELGRANO',
-          stroke: '#d62728',
+          stroke: '#FFF7BC',
           strokeWidth: 2,
         }),
         
