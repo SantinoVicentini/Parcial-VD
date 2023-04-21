@@ -120,7 +120,7 @@ h1 {
 #vis {
     display: inline-block;
     position: fixed;
-    top: 0px;
+    margin-top: 9%;
     z-index: 1;
     margin-left: 0;
     height: 1000px;
