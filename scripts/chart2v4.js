@@ -53,6 +53,9 @@ d3.dsv(';', '../data/ruidos_molestos.csv', d3.autoType).then(data => {
         label: "Denuncias Primavera",
         domain: [140, 240],
         grid: true
+      },
+      style: {
+        "background-color": "rgb(245, 244, 241)"
       }
     });
   

@@ -45,12 +45,16 @@ d3.dsv(';', '../data/ruidos_molestos.csv', d3.autoType).then(data => {
     ],
     x: {
       label: "",
-      domain: ordenDias,
+      domain: ordenDias
     },
     y: {
       label: "Denuncias Verano",
       domain: [130, 240],
       grid: true
+      
+    },
+    style: {
+      "background-color": "rgb(245, 244, 241)"
     }
   });
 

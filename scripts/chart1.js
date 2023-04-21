@@ -31,6 +31,9 @@ Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
       scheme: 'ylorbr',
       label: 'Cantidad de denuncias',
       legend: true,
+      style: {
+        "background-color": "rgb(245, 244, 241)"
+      }
     },
     marks: [
       Plot.geo(barrios, {
@@ -50,6 +53,9 @@ Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
         })
       )
     ],
+    style: {
+      "background-color": "rgb(245, 244, 241)"
+    }
   })
 
   /* Agregamos al DOM la visualización chartMap */

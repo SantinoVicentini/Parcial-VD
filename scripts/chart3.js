@@ -75,6 +75,9 @@ console.log(datosFinales)
         grid: true,
         domain: [30, 280]
       },
+      style: {
+        "background-color": "rgb(245, 244, 241)"
+      }
     });
   
     d3.select('#chart3').append(() => chart);

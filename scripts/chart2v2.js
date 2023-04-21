@@ -52,6 +52,9 @@ d3.dsv(';', '../data/ruidos_molestos.csv', d3.autoType).then(data => {
       label: "Denuncias Otonio",
       domain: [80, 180],
       grid: true
+    },
+    style: {
+      "background-color": "rgb(245, 244, 241)"
     }
   });
 

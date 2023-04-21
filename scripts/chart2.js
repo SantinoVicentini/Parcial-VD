@@ -35,8 +35,8 @@ d3.dsv(';', '../data/ruidos_molestos.csv', d3.autoType).then(data => {
       Plot.areaY(points, {
         x: "estacion",
         y: "cantidad",
-        fill: "#333333",
-        fillOpacity: 0.7
+        fill: "#0000FF",
+        fillOpacity: 0.3
       }),
       Plot.lineY(points, {
         x: "estacion",
@@ -53,6 +53,9 @@ d3.dsv(';', '../data/ruidos_molestos.csv', d3.autoType).then(data => {
     y: {
       label: 'Cantidad de denuncias',
       grid: true,
+    },
+    style: {
+      "background-color": "rgb(245, 244, 241)"
     }
   });
 
