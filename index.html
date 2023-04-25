@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PREVIEW</title>
+    <title>Ruidos Molestos CABA</title>
     <link rel="stylesheet" href="/styles/index.css">
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
@@ -11,14 +11,17 @@
     <header>
         <button id="menu-toggle">☰</button>
         <nav>
+            <p>Tipologia de datos utilizados:</p><br>
             <ul>
-              <li><a href="#" data-scroll="step1"><span>Sección 1</span></a></li>
-              <li><a href="#" data-scroll="step2"><span>Sección 2</span></a></li>
-              <li><a href="#" data-scroll="step3"><span>Sección 3</span></a></li>
-              <li><a href="#" data-scroll="step4"><span>Sección 4</span></a></li>
-              <li><a href="#" data-scroll="step5"><span>Sección 5</span></a></li>
-              <li><a href="#" data-scroll="step6"><span>Sección 6</span></a></li>
-              <li><a href="#"><span>Sección 7</span></a></li>
+                <li>Categorico/Nominal: Subcategoria (Ruidos Molestos), tipo_prestacion (Denuncias), domicilio_barrio, ESTACION (a partir de la fecha_ingreso de la denuncia)</li>
+                <li>Ordinales: fecha_ingreso, lat, lon, CANTIDAD DE DENUNCIAS (a partir de la suma de denuncias)</li>
+            </ul>
+            <p>Marcas y canales:</p><br>
+            <ul>
+                <li>Mapa de calor (colores calidos). 1 atributo categorico/nominal y 1 ordinal</li>
+                <li>Grafico de linea negra con punto maximo azul. 1 atibuto categorico/nominal y 1 ordinal</li>
+                <li>Area azul. 1 atributo categorico/nominal y 1 ordinal</li>
+                <li>Grafico de lineas (colores calidos que representan los 4 barrios con mas denuncias) 1 atributo categorico/nominal y 1 ordinal</li>
             </ul>
           </nav>
     </header>

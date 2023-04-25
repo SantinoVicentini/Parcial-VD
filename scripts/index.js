@@ -29,44 +29,44 @@ window.addEventListener('scroll', function() {
     var documentHeight = document.documentElement.scrollHeight;
     var windowHeight = window.innerHeight;
 
-    if (scrollPosition > 400) {
+    if (scrollPosition > 800) {
         container1.style.opacity = '0';
     } else {
         container1.style.opacity = '1';
     }
-    if (scrollPosition > 401) {
+    if (scrollPosition > 801) {
         container2.style.opacity = '1';
     } else {
         container2.style.opacity = '0';
     }
-    if (scrollPosition > 1150) {
+    if (scrollPosition > 1600) {
         container3.style.opacity = '1';
     } else {
         container3.style.opacity = '0';
     }
-    if (scrollPosition > 1950) {
+    if (scrollPosition > 2300) {
         container4.style.opacity = '1';
     } else {
         container4.style.opacity = '0';
     }
-    if (scrollPosition > 2800) {
+    if (scrollPosition > 3200) {
         container5.style.opacity = '1';
     } else {
         container5.style.opacity = '0';
     }
-    if (scrollPosition > 3600) {
+    if (scrollPosition > 4100) {
         container6.style.opacity = '1';
     } else {
         container6.style.opacity = '0';
     }
-    if (scrollPosition > 4500) {
+    if (scrollPosition > 5000) {
         container7.style.opacity = '1';
     }
     else {
         container7.style.opacity = '0';
     }
 
-    if (scrollPosition + windowHeight >= documentHeight - 100) {
+    if (scrollPosition + windowHeight >= documentHeight - 200) {
         container1.style.opacity = '0';
         container2.style.opacity = '0';
         container3.style.opacity = '0';
