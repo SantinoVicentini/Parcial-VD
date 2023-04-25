@@ -1,4 +1,4 @@
-# Parcial-VD:
+# Parcial-VD:   (Visualizacion no responsive. Desktop)
 - En esta ocasión recopilamos las denuncias por ruidos molestos en el año 2021 en CABA. Para ello utilizamos un .csv brindado por la cátedra.
 
 ## 1) Tipología de los datos que utilizamos:
