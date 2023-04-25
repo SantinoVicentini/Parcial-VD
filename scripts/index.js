@@ -16,3 +16,52 @@ navLinks.forEach((link) => {
         targetElement.scrollIntoView({behavior: "smooth"});
     });
 });
+
+window.addEventListener('scroll', function() {
+    var container1 = document.querySelector('#vis');
+    var container2 = document.querySelector('#vis2');
+    var container3 = document.querySelector('#vis3');
+    var container4 = document.querySelector('#vis4');
+    var container5 = document.querySelector('#vis5');
+    var container6 = document.querySelector('#vis6');
+    var container7 = document.querySelector('#vis7');
+    var scrollPosition = window.scrollY;
+
+    if (scrollPosition > 500) {
+        container1.style.opacity = '0';
+    } else {
+        container1.style.opacity = '1';
+    }
+    if (scrollPosition > 501) {
+        container2.style.opacity = '1';
+    } else {
+        container2.style.opacity = '0';
+    }
+    if (scrollPosition > 1400) {
+        container3.style.opacity = '1';
+    } else {
+        container3.style.opacity = '0';
+    }
+    if (scrollPosition > 2300) {
+        container4.style.opacity = '1';
+    } else {
+        container4.style.opacity = '0';
+    }
+    if (scrollPosition > 3000) {
+        container5.style.opacity = '1';
+    } else {
+        container5.style.opacity = '0';
+    }
+    if (scrollPosition > 3700) {
+        container6.style.opacity = '1';
+    } else {
+        container6.style.opacity = '0';
+    }
+    if (scrollPosition > 4600) {
+        container7.style.opacity = '1';
+    } else if (scrollPosition > 5200) {
+        container7.style.opacity = '0';
+    } else {
+        container7.style.opacity = '0';
+    }
+});

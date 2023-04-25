@@ -71,12 +71,12 @@ console.log(datosFinales)
         domain: ['Verano', 'Otoño', 'Invierno', 'Primavera'],
       },
       y: {
-        label: 'Cantidad de denuncias',
+        label: 'Barrios con mas denuncias',
         grid: true,
         domain: [30, 280]
       },
       style: {
-        "background-color": "rgb(245, 244, 241)"
+        "background-color": "rgb(245, 244, 241)",
       }
     });
   

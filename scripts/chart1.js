@@ -55,7 +55,8 @@ Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
     ],
     style: {
       "background-color": "rgb(245, 244, 241)"
-    }
+    },
+    
   })
 
   /* Agregamos al DOM la visualización chartMap */
