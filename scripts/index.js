@@ -26,42 +26,53 @@ window.addEventListener('scroll', function() {
     var container6 = document.querySelector('#vis6');
     var container7 = document.querySelector('#vis7');
     var scrollPosition = window.scrollY;
+    var documentHeight = document.documentElement.scrollHeight;
+    var windowHeight = window.innerHeight;
 
-    if (scrollPosition > 500) {
+    if (scrollPosition > 400) {
         container1.style.opacity = '0';
     } else {
         container1.style.opacity = '1';
     }
-    if (scrollPosition > 501) {
+    if (scrollPosition > 401) {
         container2.style.opacity = '1';
     } else {
         container2.style.opacity = '0';
     }
-    if (scrollPosition > 1400) {
+    if (scrollPosition > 1150) {
         container3.style.opacity = '1';
     } else {
         container3.style.opacity = '0';
     }
-    if (scrollPosition > 2300) {
+    if (scrollPosition > 1950) {
         container4.style.opacity = '1';
     } else {
         container4.style.opacity = '0';
     }
-    if (scrollPosition > 3000) {
+    if (scrollPosition > 2800) {
         container5.style.opacity = '1';
     } else {
         container5.style.opacity = '0';
     }
-    if (scrollPosition > 3700) {
+    if (scrollPosition > 3600) {
         container6.style.opacity = '1';
     } else {
         container6.style.opacity = '0';
     }
-    if (scrollPosition > 4600) {
+    if (scrollPosition > 4500) {
         container7.style.opacity = '1';
-    } else if (scrollPosition > 5200) {
+    }
+    else {
         container7.style.opacity = '0';
-    } else {
+    }
+
+    if (scrollPosition + windowHeight >= documentHeight - 100) {
+        container1.style.opacity = '0';
+        container2.style.opacity = '0';
+        container3.style.opacity = '0';
+        container4.style.opacity = '0';
+        container5.style.opacity = '0';
+        container6.style.opacity = '0';
         container7.style.opacity = '0';
     }
 });
